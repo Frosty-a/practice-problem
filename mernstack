@@ -1,0 +1,40 @@
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+function sumArray(arr) {
+  return arr.reduce((sum, num) => sum + num, 0);
+}
+
+console.log(sumArray([1, 2, 3, 4])); // 10
+function largestNumber(arr) {
+  return Math.max(...arr);
+}
+
+console.log(largestNumber([10, 5, 20, 8])); // 20
+function isEvenOrOdd(num) {
+  return num % 2 === 0 ? "Even" : "Odd";
+}
+
+console.log(isEvenOrOdd(7)); // Odd
+console.log(isEvenOrOdd(10)); // Even
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseString("hello")); // "olleh"
+const a = [1, 2];
+const b = [3, 4];
+const merged = [...a, ...b];
+
+console.log(merged); // [1, 2, 3, 4]
+const numbers = [1, 2, 3, 4, 5, 6];
+const evens = numbers.filter(num => num % 2 === 0);
+
+console.log(evens); // [2, 4, 6]
+const name = "Alice";
+const msg = `Hello ${name}, welcome!`;
+
+console.log(msg);
+const greet = (name) => `Hello, ${name}`;
+
+console.log(greet("Alice")); // Hello, Alice
